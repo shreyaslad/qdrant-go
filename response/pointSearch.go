@@ -15,7 +15,7 @@ type PointSearchResult struct {
 	Version uint64                 `json:"version"`
 	Score   float64                `json:"score"`
 	Payload map[string]interface{} `json:"payload,omitempty"`
-	Vector  []float64              `json:"vector,omitempty"`
+	Vector  []float32              `json:"vector,omitempty"`
 }
 
 func (p *PointSearch) AcceptContentType() string {
